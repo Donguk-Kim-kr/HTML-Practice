@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델</title>
+    <style>
+        div {
+        width: 200px;
+        height: 100px;
+        margin: 15px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 100px;
+        border-width: 5px;
+        display: inline-block;
+    }
+        .box1{
+            border-style: solid;
+            border-width: 2px;
+            border-color: aqua;
+        }
+        .box2{
+            border-style: dotted;
+            border-width: thick thin;
+            border-color: greenyellow;
+        }
+        .box3{
+            border-style: dashed;
+            border-width: thin thin thin thin;
+            border-right-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">실선 테두리</div>
+    <div class="box2">점선 테두리</div>
+    <div class="box3">짧은 테두리</div>
+</body>
+</html>
