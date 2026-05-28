@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치 속성</title>
+
+    <style>
+        p {
+            width: 500px;
+            height: 200px;
+            background-color: rgb(177, 177, 245);
+            border: 1px solid gray;
+            line-height: 2;
+        }
+        #static {
+            position: static;
+        }
+        #relative-1 {
+            position: relative;
+        }
+        #relative-2 {
+            position: relative;
+            left: 100px;
+            top: -50px;
+        }
+        #fixed {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            position: fixed;
+            right: 50px;
+            top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <p id="static">하늘 가득히 눈이 휘몰아쳐 흰 사슴을 쏘아가고, 글을 조롱하는 신비한 협객이 푸른 원앙새에 기댄다</p>
+    <p id="relative-1">하늘 가득히 눈이 휘몰아쳐 흰 사슴을 쏘아가고, 글을 조롱하는 신비한 협객이 푸른 원앙새에 기댄다</p>
+    <p id="relative-2">하늘 가득히 눈이 휘몰아쳐 흰 사슴을 쏘아가고, 글을 조롱하는 신비한 협객이 푸른 원앙새에 기댄다</p>
+    <p id="fixed">하늘 가득히 눈이 휘몰아쳐 흰 사슴을 쏘아가고, 글을 조롱하는 신비한 협객이 푸른 원앙새에 기댄다</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델</title>
+
+    <style>
+        .wrapper {
+            width: 800px;
+            margin: 10px auto;
+            padding: 20px;
+            border: 1px solid blue;
+        }
+        .sidebar {
+            width: 150px;
+            height: 150px;
+        }
+        #left {
+            background: blueviolet;
+            float: left;
+            margin-right: 10px;
+        }
+        #right {
+            background: rgb(107, 255, 62);
+            float: right;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar" id="left">박스1</div>
+        <div class="sidebar" id="right">박스2</div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit reprehenderit tempora obcaecati debitis dicta dolorum delectus vel ipsa assumenda nulla fuga accusamus, minus qui harum veniam culpa sapiente! Reprehenderit, accusantium.</p>
+        <p><br></p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit deserunt nostrum itaque ipsa nisi. Autem, perferendis pariatur. Nisi, omnis, blanditiis quidem veritatis provident incidunt reprehenderit, consequuntur excepturi mollitia atque odit.</p>
+    </div>
+</body>
+</html>
