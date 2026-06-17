@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 filter 함수</title>
+    <style>
+                .gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        .gallery img {
+            width: 80%;
+            border-radius: 50%;
+        }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            border: 1px solid rgb(160, 160, 160);
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f9f9f9;}
+    </style>
+</head>
+<body>
+    <div class="orgin">
+        <img src="./images/cat.jpg" style="border-radius: 50%;">
+    </div>
+    <div class="gallery">
+        <div class="image-container">
+            <div class="title">filter 1: blur(5px)</div>
+            <img src="./images/cat.jpg" class="blur" style="border-radius: 50%; filter: blur(5px);">
+        </div>
+        <div class="image-container">
+            <div class="title">filter 2: brightness(2)</div>
+            <img src="./images/cat.jpg" class="brightness" style="border-radius: 50%; filter: brightness(2);">
+        </div>
+        <div class="image-container">
+            <div class="title">filter 3: contrast(200%)</div>
+            <img src="./images/cat.jpg" class="contrast" style="border-radius: 50%; filter: contrast(200%);">
+        </div>
+        <div class="image-container">
+            <div class="title">filter 4: drob-shadow(16px 16px 10px black)</div>
+            <img src="./images/cat.jpg" class="drob-shadow" style="border-radius: 50%; filter: drop-shadow(16px 16px 10px black);">
+        </div>
+        <div class="image-container">
+            <div class="title">filter 5: grayscale(100%)</div>
+            <img src="./images/cat.jpg" class="grayscale" style="border-radius: 50%; filter: grayscale(100%);">
+        </div>
+        <div class="image-container">
+            <div class="title">filter 6: invert(100%)</div>
+            <img src="./images/cat.jpg" class="invert" style="border-radius: 50%; filter: invert(100%);">
+        </div>
+        <div class="image-container">
+            <div class="title">filter 7: sepia(100%)</div>
+            <img src="./images/cat.jpg" class="sepia" style="border-radius: 50%; filter: sepia(100%);">
+        </div>
+        <div class="image-container">
+            <div class="title">filter 8: opacity(50%)</div>
+            <img src="./images/cat.jpg" class="opacity" style="border-radius: 50%; filter: opacity(50%);">
+        </div>
+        <div class="image-container">
+            <div class="title">filter 9: hue-rotate(98deg)</div>
+            <img src="./images/cat.jpg" class="hue-rotate" style="border-radius: 50%; filter: hue-rotate(98deg);">
+        </div>
+        <div class="image-container">
+            <div class="title">filter 10: saturate(200%)</div>
+            <img src="./images/cat.jpg" class="saturate" style="border-radius: 50%; filter: saturate(200%);">
+        </div>
+    </div>
+</body>
+</html>
