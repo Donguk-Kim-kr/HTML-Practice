@@ -1,0 +1,20 @@
+<!-- HTML: 차트가 그려질 영역 -->
+<canvas id="myChart"></canvas>
+
+<script>
+  // JS: canvas 요소 가져오기
+  const ctx = document.getElementById('myChart').getContext('2d');
+
+  // 차트 생성
+  new Chart(ctx, {
+    type: '차트종류',      // 'bar' | 'line' | 'pie' | 'doughnut'
+    data: {
+      labels: [],          // X축 항목 이름 (배열)
+      datasets: [{
+        label: '범례 이름',
+        data: [],          // 실제 데이터 값 (배열)
+      }]
+    },
+    options: {}            // 옵션 (생략 가능)
+  });
+</script>
