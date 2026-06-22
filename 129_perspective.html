@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션 - 원근감 주기</title>
+    <style>
+        #container {
+            width: 800px;
+            margin: 20px auto;
+        }
+        .origin {
+            float: left;
+            margin: 40px;
+            border: 1px solid #ccc;
+        }
+        .rotatex:hover {
+            transform: rotateX(30deg);
+        }
+        .rotatey:hover {
+            transform: rotateY(30deg);
+        }
+        .rotatez:hover {
+            transform: rotateZ(45deg);
+        }
+        #pers {
+            perspective: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="origin">
+            <div class="rotatex"><img src="./images/home.png" alt="농구공"></div>
+        </div>
+        <div class="origin">
+            <div class="rotatey"><img src="./images/home.png" alt="농구공"></div>
+        </div>
+        <div class="origin">
+            <div class="rotatez"><img src="./images/home.png" alt="농구공"></div>
+        </div>
+
+        <div class="origin" id="pers">
+            <div class="rotatex"><img src="./images/home.png" alt="농구공"></div>
+        </div>
+        <div class="origin" id="pers">
+            <div class="rotatey"><img src="./images/home.png" alt="농구공"></div>
+        </div>
+        <div class="origin" id="pers">
+            <div class="rotatez"><img src="./images/home.png" alt="농구공"></div>
+        </div>
+        
+        <div class="origin rotatex">
+            <img src="./images/home.png" alt="농구공">
+        </div>
+        <div class="origin rotatey">
+            <img src="./images/home.png" alt="농구공">
+        </div>
+        <div class="origin rotatez">
+            <img src="./images/home.png" alt="농구공">
+        </div>
+        
+        <div class="origin rotatex" id="pers">
+            <img src="./images/home.png" alt="농구공">
+        </div>
+        <div class="origin rotatey" id="pers">
+            <img src="./images/home.png" alt="농구공">
+        </div>
+        <div class="origin rotatez" id="pers">
+            <img src="./images/home.png" alt="농구공">
+        </div>
+    </div>
+</body>
+</html>
